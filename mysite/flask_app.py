@@ -1,7 +1,7 @@
 
 # A very simple Flask Hello World app for you to get started with...
 
-from flask import Flask
+from flask import Flask,render_template,request,redirect,url_for
 
 app = Flask(__name__)
 
