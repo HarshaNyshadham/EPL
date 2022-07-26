@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="/static/css/template.css?v=1.1">
-        <title>Collapsible sidebar using Bootstrap 3</title>
+        <title>EPL</title>
 
          <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -40,7 +40,13 @@
 </div>
 
 <div class="w3-container" style="margin-left:160px">
-<h2>Sidebar Accordion</h2>
+<div class="h4 mx-auto" style="margin-left: 20px;">Tennis Premier League</div>
+<!--                     <a class="nav-link" href="{{ url_for('admin') }}">Admin</a> -->
+                    <form action="{{ url_for("admin")}}" method="post" >
+                      <label for="Admin">Admin:</label>
+                      <input type="text" id="pwd" name="pwd" placeholder="password">
+                      <button type="submit">submit</button>
+                      </form>
 <p>In this example, we have added an accordion and a dropdown menu inside the side navigation.</p>
 <p>Click on both to understand how they differ from each other. The accordion will push down the content, while the dropdown lays over the content.</p>
 </div>
